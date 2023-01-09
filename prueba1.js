@@ -1,2 +1,5 @@
-var numero = "1";
-let nombre = "joaco"
+function dioxidoDeCloro(cds) {
+    console.log("hola" + cds)
+}
+
+dioxidoDeCloro + "Q tal?"
