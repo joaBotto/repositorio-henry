@@ -202,17 +202,32 @@ function obtenerMayor(x, y) {
     //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
     //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
     //Escribe tu código aquí   
+    var numeros = [];
+    for ( let i = 0; i < 11; i ++ ) {
+      numeros.push(6 * i);
+    }
+    return numeros;
     
   }
   
   function tieneTresDigitos(numero){
     //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
     //Escribe tu código aquí
-    
+    if ( numero > 99 && numero < 1000) {
+      return true;
+    }
+    return false;
   }
   
   function doWhile(numero) {
     //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
     //Retornar el valor final.
     //Usar el bucle do ... while.
+    var contador = 0;
+    do {
+      numero = numero + 5;
+      contador++;
+    }
+    while (contador < 8);
+    return numero;
   }
